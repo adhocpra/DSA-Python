@@ -22,4 +22,12 @@ print(sorted(names, key=len))
 #searching
 #linear and binary
 
-numbers
+students= ["ram", "shyam", "Pravat", "John"]
+
+def find_student(names, target):
+    for i in range (len(names)):
+        if names[i] ==target:
+            print(f"found at position {i}")
+            return
+    print("Not found")
+find_student(students, "Pravat")
